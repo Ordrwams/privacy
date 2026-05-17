@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --cream: #faf8f5;
+      --ink: #1a1814;
+      --muted: #6b6560;
+      --accent: #c8472b;
+      --border: #e8e4df;
+      --max-width: 760px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--cream);
+      color: var(--ink);
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 1.8;
+    }
+
+    header {
+      border-bottom: 1px solid var(--border);
+      padding: 48px 24px 40px;
+      text-align: center;
+    }
+
+    header .label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 12px;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(28px, 5vw, 48px);
+      font-weight: 600;
+      color: var(--ink);
+      line-height: 1.2;
+    }
+
+    header .meta {
+      margin-top: 16px;
+      font-size: 13px;
+      color: var(--muted);
+      letter-spacing: 0.04em;
+    }
+
+    main {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 64px 24px 96px;
+    }
+
+    section {
+      margin-bottom: 52px;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 16px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    p {
+      color: #3a3632;
+      margin-bottom: 14px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 14px;
+    }
+
+    ul li {
+      padding: 6px 0 6px 20px;
+      position: relative;
+      color: #3a3632;
+    }
+
+    ul li::before {
+      content: '—';
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s;
+    }
+
+    a:hover { border-color: var(--accent); }
+
+    .contact-box {
+      background: white;
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      padding: 24px 28px;
+      margin-top: 8px;
+    }
+
+    .contact-box p { margin: 0; }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 24px;
+      text-align: center;
+      font-size: 12px;
+      color: var(--muted);
+      letter-spacing: 0.04em;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="label">Legal</div>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Last updated: May 17, 2025 &nbsp;·&nbsp; <strong>YOUR APP NAME</strong></p>
+</header>
+
+<main>
+
+  <section>
+    <h2>1. Introduction</h2>
+    <p>
+      Welcome to <strong>YOUR APP NAME</strong> ("we", "our", or "us"). This Privacy Policy explains how we collect, use, and protect information when you use our application, which automates the publishing of content to Pinterest via the Pinterest API.
+    </p>
+    <p>
+      By using this application, you agree to the practices described in this policy.
+    </p>
+  </section>
+
+  <section>
+    <h2>2. Information We Access</h2>
+    <p>Our application accesses the following data through authorized APIs:</p>
+    <ul>
+      <li>Your Pinterest account information (username, profile) — only to identify your account for publishing</li>
+      <li>Your Pinterest boards — to select the destination board for pins</li>
+      <li>Images stored in your Google Drive folder — only the folder you designate for upload</li>
+      <li>File names — used as pin titles</li>
+    </ul>
+    <p>We do <strong>not</strong> collect passwords, financial data, or any personal information beyond what is listed above.</p>
+  </section>
+
+  <section>
+    <h2>3. How We Use the Information</h2>
+    <ul>
+      <li>To create and publish Pinterest pins on your behalf</li>
+      <li>To generate AI-assisted pin descriptions and alt-text from image file names</li>
+      <li>To schedule pins across future dates automatically</li>
+      <li>To remove images from your designated Google Drive folder after successful upload</li>
+    </ul>
+    <p>We do <strong>not</strong> sell, share, or transfer your data to any third parties.</p>
+  </section>
+
+  <section>
+    <h2>4. Data Storage</h2>
+    <p>
+      This application does not maintain a persistent database or server. All operations are performed in real time and no image files or Pinterest account data are stored on our systems beyond the duration of a single session.
+    </p>
+    <p>
+      AI-generated descriptions are produced via the Anthropic Claude API and are not retained after the session ends.
+    </p>
+  </section>
+
+  <section>
+    <h2>5. Third-Party Services</h2>
+    <p>This application integrates with the following third-party services:</p>
+    <ul>
+      <li><strong>Pinterest API</strong> — for publishing pins. Subject to <a href="https://policy.pinterest.com/privacy-policy" target="_blank">Pinterest's Privacy Policy</a>.</li>
+      <li><strong>Google Drive API</strong> — for reading and deleting image files. Subject to <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.</li>
+      <li><strong>Anthropic Claude API</strong> — for generating descriptions. Subject to <a href="https://www.anthropic.com/privacy" target="_blank">Anthropic's Privacy Policy</a>.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>6. Your Rights</h2>
+    <p>You have the right to:</p>
+    <ul>
+      <li>Revoke access to your Pinterest account at any time via Pinterest settings</li>
+      <li>Revoke access to your Google Drive at any time via Google account settings</li>
+      <li>Request information about what data was processed</li>
+      <li>Request deletion of any stored data (though we do not store data persistently)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>7. Security</h2>
+    <p>
+      We use OAuth 2.0 authorization flows for both Pinterest and Google APIs. We never store your access tokens in plain text. All API communications are made over HTTPS.
+    </p>
+  </section>
+
+  <section>
+    <h2>8. Changes to This Policy</h2>
+    <p>
+      We may update this Privacy Policy occasionally. Changes will be reflected by the "Last updated" date at the top of this page. Continued use of the application after changes constitutes acceptance of the new policy.
+    </p>
+  </section>
+
+  <section>
+    <h2>9. Contact Us</h2>
+    <p>If you have any questions about this Privacy Policy, please contact us:</p>
+    <div class="contact-box">
+      <p>📧 <a href="mailto:YOUR@EMAIL.COM">YOUR@EMAIL.COM</a></p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  © 2025 YOUR APP NAME &nbsp;·&nbsp; All rights reserved
+</footer>
+
+</body>
+</html>
